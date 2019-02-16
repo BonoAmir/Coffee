@@ -3,6 +3,6 @@ Android app that takes your coffee order and creates a summary then mail your or
 What I Learned : 
 
 
--Using intents to open other apps.
+- Using intents to open other apps.
 
 - Experimenting with some UI components 
