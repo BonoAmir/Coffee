@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:background="#BBDEFB" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="164dp"
+            android:text="@string/Quantity" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="399dp"
+            android:onClick="submitOrder"
+            android:text="ORDER"></Button>
+
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="191dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button"
+            android:layout_alignBottom="@+id/quantity_text_view"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="-27dp"
+            android:text="@string/Order_Summery"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/order_summery_text_view"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="258dp"
+            android:layout_marginEnd="-246dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="$5"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignTop="@+id/quantity_text_view"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="146dp"
+            android:layout_marginLeft="146dp"
+            android:layout_marginTop="1dp"
+            android:onClick="minus"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/quantity_text_view"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginBottom="6dp"
+            android:onClick="plus"
+            android:text="+" />
+
+        <ImageView
+            android:id="@+id/checked"
+            android:layout_width="20dp"
+            android:layout_height="21dp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/checked" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/quantity_text_view"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="-75dp"
+            android:paddingLeft="24dp"
+            android:text="Whipped Cream" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkBox"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/TOPPINGS"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="120dp"
+            android:paddingLeft="24dp"
+            android:text="Chocolate" />
+
+        <EditText
+            android:id="@+id/yourName"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="Whats your name ?"
+            android:inputType="textPersonName" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

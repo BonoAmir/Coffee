@@ -1,0 +1,11 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">just java</string>
+    <string name="value">0</string>
+    <string name="TOPPINGS" translatable="false">TOPPINGS</string>
+    <string name="Quantity" translatable="false">Quantity</string>
+    <string name="Order_Summery" translatable="false">Order Summery</string>
+
+
+
+
+</resources>

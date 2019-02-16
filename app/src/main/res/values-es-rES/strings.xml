@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">just java</string>
+    <string name="TOPPINGS" translatable="false">ingredientes</string>
+    <string name="Quantity" translatable="false">" cantidad"</string>
+    <string name="Order_Summery" translatable="false">Resumen del pedido</string>
+</resources>
